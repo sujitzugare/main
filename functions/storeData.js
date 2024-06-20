@@ -2,8 +2,8 @@ const { Octokit } = require("@octokit/rest");
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
 exports.handler = async function(event, context) {
-  const repoOwner = "YOUR_GITHUB_USERNAME";
-  const repoName = "YOUR_REPOSITORY_NAME";
+  const repoOwner = "sujitzugare";
+  const repoName = "qr";
   const filePath = "data.json";
 
   if (event.httpMethod === 'POST') {
